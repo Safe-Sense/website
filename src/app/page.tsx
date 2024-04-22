@@ -26,14 +26,14 @@ export default function Home() {
   }
 
   return (
-    <main className="flex min-h-screen flex-col items-center justify-evenly p-24">
-      <div className="w-4/5  mb-32 flex justify-between">
+    <main className="flex min-h-screen flex-col items-center justify-evenly p-10 md:p-24 lg:p-24 ">
+      <div className="w-full md:w-4/5 lg:w-4/5  md:mb-32 lg:mb-32">
         <h1 className="mt-12 mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white">
           Safe Sense
         </h1>
       </div>
-      <div className="w-4/5 mb-32 flex justify-between">
-        <div className="w-3/5">
+      <div className="w-full md:w-4/5 lg:w-4/5  mb-32 block justify-between md:flex lg:flex  justify-between ">
+        <div className="w-full md:w-3/5 lg:w-3/5 ">
           <h3 className="mb-4 text-2xl font-extrabold text-gray-900 dark:text-white md:text-4xl lg:text-5xl">
             <span className="text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400">
               Making our roads safer{" "}
@@ -83,22 +83,22 @@ export default function Home() {
               >
                 <path
                   stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
                   d="M1 5h12m0 0L9 1m4 4L9 9"
                 />
               </svg>
             </a>
           </div>
         </div>
-        <div className="w-1/5">
+        <div className="w-full md:w-1/5 lg:w-1/5 mt-10 md:mt-0 lg:mt-0 ">
           <video width={"100%"} height={"auto"} controls poster={"/poster.png"}>
-            <source src={"/mhw.mp4"} type="video/mp4" />
+            <source src={"./mhw.mp4"} type="video/mp4" />
           </video>
         </div>
       </div>
-      <div className="w-4/5">
+      <div className="w-full md:w-4/5 lg:w-4/5  ">
         <h3 className="mb-4 text-2xl font-extrabold text-gray-900 dark:text-white md:text-4xl lg:text-5xl">
           {" "}
           Inspiration
@@ -112,7 +112,7 @@ export default function Home() {
         <div className="flex justify-center align-middle">
           <Image
             className="relative dark:invert mt-5 mb-5"
-            src="/ADAS stats.jpg"
+            src="./ADAS stats.jpg"
             alt="ADAS Stats"
             width={1000}
             height={591.37}
@@ -133,7 +133,7 @@ export default function Home() {
           life is invaluable; making roads safer starts with us.{" "}
         </p>
       </div>
-      <div className="w-4/5 mt-16">
+      <div className="w-full md:w-4/5 lg:w-4/5   mt-16">
         <h3 className="mb-4 text-2xl font-extrabold text-gray-900 dark:text-white md:text-4xl lg:text-5xl">
           {" "}
           How it Works
@@ -146,7 +146,7 @@ export default function Home() {
         <div className="flex justify-center align-middle">
           <Image
             className="relative  mt-5 mb-5"
-            src="/phone mhw.png"
+            src="./phone mhw.png"
             alt="phone"
             width={1000}
             height={591.37}
@@ -166,7 +166,7 @@ export default function Home() {
         <div className="flex justify-center align-middle">
           <Image
             className="relative  mt-5 mb-5"
-            src="/sensor detection.png"
+            src="./sensor detection.png"
             alt="Sensor Positioning"
             width={1000}
             height={591.37}
@@ -174,18 +174,17 @@ export default function Home() {
           />
         </div>
       </div>
-      <div className="w-4/5">
+      <div className="w-full md:w-4/5 lg:w-4/5  ">
         <h3 className="mb-4 text-2xl font-extrabold text-gray-900 dark:text-white md:text-4xl lg:text-5xl">
           {" "}
           Reach out
         </h3>
 
         <p className="mt-12 text-lg font-normal text-gray-500 lg:text-xl dark:text-gray-400">
-          We are always looking for investors to make this dream a reality and
-          learn about our roadmap. Our team is made up of very talented
+          We are always looking for investors to make this dream a reality. Our team is made up of very talented
           hardware, mobile and machine learning engineers, an amazing product
-          designers and a strategic marketing lead. If you are interested in
-          learning more, please contact our managing director at{" "}
+          designer and a strategic marketing lead. If you are interested in
+          learning more about the product, our roadmap, projected Monthly recurring revenue etc. , please contact our managing director at{" "}
           <a
             href="mailto:sarahguelzim@gmail.com"
             className="font-medium text-blue-600 underline dark:text-blue-500 hover:no-underline"
@@ -209,9 +208,9 @@ export default function Home() {
           >
             <path
               stroke="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
               d="M1 5h12m0 0L9 1m4 4L9 9"
             />
           </svg>
